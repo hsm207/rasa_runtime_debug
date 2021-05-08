@@ -1,3 +1,5 @@
-FROM python:3.7.9-slim-buster
+FROM rasa/rasa:2.4.3-full
 
-RUN pip install rasa[full]==2.4.3
+USER root
+
+ENTRYPOINT [ "bash" ]
